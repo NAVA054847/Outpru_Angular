@@ -1,0 +1,15 @@
+
+
+@for(obj of arr;track $index){
+    <app-box-component [str]="obj" (myonblure)="f1($event)" ></app-box-component>
+}
+
+
+<div>
+
+<!-- <p>the obj is:</p> -->
+<p>{{obj.model}}</p>
+<p>{{obj.name}}</p>
+<p>{{obj.price}}</p>
+</div>
+
